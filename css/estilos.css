@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.logo img{
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+
+.menu li{
+    margin-bottom: 20px;
+    
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background: #92e60b;   
+}
+
+
+.slideshow{
+    width: 100%;
+    position: relative;
+}
+
+.slider li, ul{
+    width: 100%;
+}
+
+.slider li img{
+    width: 100%;
+    height: 485px;
+}
+
+.slider li{
+    overflow: hidden;
+}
+
+.slider .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 50px;
+}
+
+.slider .caption h1{
+    font-size: 50px;
+}
+
+.slider .caption p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.pagination{
+    position: absolute;
+    top: 102%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+}
+
+.pagination li{
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #858585;
+    cursor: pointer; 
+}
+
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgb(109, 218, 8);
+    font-size: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.left{
+    left: 10px;
+}
+
+.right{
+    right: 10px;
+}
+
+
+/* Responsividad */
+@media screen and (max-width: 600px){
+    .slider.caption p{
+        display: none;
+    }
+
+    .slider.caption h1{
+        font-size: 35px;
+    }
+
+    .left, .right{
+        font-size: 30px;
+    }
+
+    .slider li img{
+    width: 600px;
+    }
+
+    .pagination{
+        display: none;
+    }
+}
+
+.navegacion{
+    width: 1000px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 10px 
+    rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 1px 10px 
+    rgba(0, 0, 0, 0.4);
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0px;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 0px 20px;
+    color: #353535;
+    font-family: 'Courier New', Courier, monospace; 
+    text-decoration: none;   
+}
+
+.menu li a:hover{
+    color: #CE7D35;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+/******************* SUBMENU *****************************/ 
+
+.submenu{
+    position: absolute;
+    background: #92e60b;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+    z-index: 3;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: firebrick;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*************** CSS Mision.html **************************/
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 1px 10px 
+    rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 1px 10px 
+    rgba(0, 0, 0, 0.4);
+    background: #fff;
+}
+
+.contenedor img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+.titulomision{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+/*************Estilo Actividades******************/
+
+.portafolio-item img{
+    width: 370px;
+    height: 300px;
+    border-radius: 10px;  
+}
+
+.portafolio-img{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    
+}
+
+.Portafolio{
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+}
+
+.Portafolio h1{
+    text-align: center;
+    font-size: 38px;
+    margin: 15px 0px 40px;
+}
+
+.portafolio-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.portafolio-item{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio-text{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.contenedoract{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 1px 10px 
+    rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 1px 10px 
+    rgba(0, 0, 0, 0.4);
+    background: #fff;
+    border-radius: 13px;
+}
+.portafolio-text p{
+    text-align: justify;
+}
+
+.portafolio-item:hover .portafolio-text{
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+}
+
+.portafolio-item:hover .portafolio-img{
+-webkit-transform: scale(1.15);
+        transform: scale(1.15);
+}
+
+.contenedoract h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}

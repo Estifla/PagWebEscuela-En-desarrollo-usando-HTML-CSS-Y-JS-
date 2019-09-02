@@ -1,2 +1,1 @@
-# Slider
- 
+Pagina web en desarrollo

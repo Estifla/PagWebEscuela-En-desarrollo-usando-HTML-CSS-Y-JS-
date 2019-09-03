@@ -30,13 +30,14 @@ ul,ol{
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    background: #92e60b;   
+    background: #99FF66;   
 }
 
 
 .slideshow{
     width: 100%;
     position: relative;
+    margin-top: 15px;
 }
 
 .slider li, ul{
@@ -190,6 +191,7 @@ body{
 
 .navegacion a:hover{
     background: #F9E79F; 
+    -webkit-transition: 0.8s; 
     transition: 0.8s;
     text-transform: unset;
 }
@@ -343,4 +345,46 @@ body{
     font-size: 40px;
     margin-bottom: 10px;
     font-weight: 100;
+}
+
+/************************* CSS DOCENTES ************************/
+.portafolio-item2 img{
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;  
+}
+
+.portafolio-img2{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    
+}
+
+.portafolio-item2:hover .portafolio-text2{
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+}
+
+.portafolio-item2:hover .portafolio-img2{
+-webkit-transform: scale(1.15);
+        transform: scale(1.15);
+}
+
+.portafolio-item2{
+    width: 22%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.portafolio-text2{
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
